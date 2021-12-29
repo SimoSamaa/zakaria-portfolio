@@ -62,68 +62,6 @@ body {
         transform: rotate(360deg);
     }
 }
-/* Cookies ***************************/
-.wrapper {
-    position: fixed;
-    bottom: 30px;
-    left: 30px;
-    background:var(--blue);
-    max-width: 365px;
-    border-radius: 15px;
-    padding: 25px 25px 30px 25px;
-    text-align: center;
-    z-index: 5;
-}
-    .wrapper.hide {
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.5 ease;
-}
-    .wrapper img {
-    max-width: 90px;
-}
-.wrapper .content {
-    margin-top: 10px;
-}
-.content header {
-    font-size: 25px;
-    font-weight: 600;
-}
-.content p {
-    color: #fbf7f7;
-    margin: 5px 0 20px 0;
-}
-.content .buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.buttons .item {
-    margin: 0 10px;
-}
-.content button {
-    padding: 10px 20px;
-    background: #2a2a2a;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    font-weight: 500;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.5s;
-}
-.content button:hover {
-    background: #f88a2a;
-}
-.buttons a {
-    color: rgb(204, 203, 203);
-    transition: all 0.3s;
-    text-decoration: underline;
-}
-.buttons a:hover {
-    color: rgb(251, 251, 251);
-}
 /* nav-bar ****************************/
 nav {
     width: 100%;
