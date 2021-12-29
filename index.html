@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Zd</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://i.ibb.co/wSG8W4g/zd-next-logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+    <!-- loading -->
+    <div class="loading">
+        <div></div>
+    </div>
+    <!-- Cookies -->
+    <div class="wrapper">
+        <img src="https://i.ibb.co/ggfBHwm/cookie.png" alt="">
+        <div class="content">
+            <header>Cookies Constent</header>
+            <p>This website use cookies to ensure you get the best experience on our website</p>
+            <div class="buttons">
+                <button class="item">I understand</button>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+    <!-- nav-bar ***************************************************-->
+    <nav>
+        <!-- logo -->
+        <div class="logo">
+            <img src="https://i.ibb.co/BnHs3cc/logo-3.png" alt="logo">
+        </div>
+        <!-- sandwich bar -->
+        <input type="checkbox" id="click">
+        <label class="check" for="click"></label>
+        <!-- liste -->
+        <ul class="menu">
+            <a href="#"><li class="home">Home</li></a>
+            <a href="#skills"><li>Skills</li></a>
+            <a href="#Portfolio"><li>Portfolio</li></a>
+            <a href="#services"><li>Services</li></a>
+            <a href="#contact"><li>Contact</li></a>
+        </ul>
+        <!-- mode-light -->
+        <div class="mode-light">
+            <img src="https://i.ibb.co/1GjqN0k/sun.png" id="icon">
+        </div>
+    </nav>
+
+    <!-- home Section ***************************************************-->
+    <section id="home">
+        <!-- model-3d -->
+        <divc class="model-3d">
+            <model-viewer camera-controls  auto-rotate disable-zoom src="Agile knight.glb"></model-viewer>
+        </div>
+        <div class="home-text">
+            <h1>Hey, I'm Zakaria El Gallouch a 2D/3D Artist</h1>
+            <p>Currently focusing on Art direction, Character 3D and Digital Painting. Work collaborations or just to
+                say hi ?</p>
+        </div>
+        <!-- btn -->
+        <div class="btn">
+            <a class="btns" href="#">
+                <span></span><span></span><span></span><span></span>
+                Get in Touch
+            </a>
+        </div>
+    </section>
+    <!-- skills *******************************************************-->
+    <section id="skills">
+        <div class="my-skills">
+            <span>MY SKILLS</span>
+            <h2>My Experties</h2>
+            <!-- taps -->
+            <div class="tap">
+                <div style="display: none;" class="all">
+                <ul class="taps-logo">
+                    <li><a href="#tap--1"><img src="https://i.ibb.co/4Kt6cBr/1200px-Adobe-Photoshop-CC-icon-svg.png" alt=""></a></li>
+                    <li><a href="#tap--2"><img src="https://i.ibb.co/Smyh44d/zp.png" alt=""></a></li>
+                    <li><a href="#tap--3"><img src="https://i.ibb.co/3dP85yR/Substance-Painter.png" alt=""></a></li>
+                    <li><a href="#tap--4"><img src="https://i.ibb.co/Dz9R8HS/marvelous-designer-logo.png" alt=""></a></li>
+                </ul>
+                </div>
+                <!-- Photoshop -->
+                <span id="tap--1" class="switch"></span>
+                <a href="#tap--1" class="link">Photoshop</a>
+                <div class="content">
+                    <div class="skills-box">
+                        <div class="icon-box"><img src="https://i.ibb.co/4Kt6cBr/1200px-Adobe-Photoshop-CC-icon-svg.png" alt=""></div>
+                        <div class="text-box">
+                            <strong>Adobe Photoshop</strong>
+                            <p>Expert Digital Painting With 3 Years Experience</p>
+                            <div class="line">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ZBrush -->
+                <span id="tap--2" class="switch"></span>
+                <a href="#tap--2" class="link">ZBrush</a>
+                <div class="content">
+                    <div class="skills-box">
+                        <div class="icon-box"><img src="https://i.ibb.co/Smyh44d/zp.png" alt=""></div>
+                        <div class="text-box">
+                            <strong>Pixologic ZBrush</strong>
+                            <p>Digital Sculpting that Help Me To Combines 3D/2.5D modeling, texturing and painting</p>
+                            <div class="line">
+                                <span class="zb"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Substance Painter -->
+                <span id="tap--3" class="switch"></span>
+                <a href="#tap--3" class="link">Substance</a>
+                <div class="content">
+                    <div class="skills-box">
+                        <div class="icon-box"><img src="https://i.ibb.co/3dP85yR/Substance-Painter.png" alt=""></div>
+                        <div class="text-box">
+                            <strong>Substance Painter</strong>
+                            <p>Paint in 3D in real time I Used For Texturing 3D Character</p>
+                            <div class="line">
+                                <span class="sub"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Marvelous -->
+                <span id="tap--4" class="switch"></span>
+                <a href="#tap--4" class="link">Marvelous</a>
+                <div class="content">
+                    <div class="skills-box">
+                        <div class="icon-box"><img src="https://i.ibb.co/Dz9R8HS/marvelous-designer-logo.png" alt=""></div>
+                        <div class="text-box">
+                            <strong>Marvelous Designer</strong>
+                            <p>Marvelous Designer is a cloth simulation program which is used to create dynamic 3D clothing for games, films, 3D art, and 3D animations.</p>
+                            <div class="line">
+                                <span class="mar"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="avatar">
+                <img src="https://i.ibb.co/mb7tw04/ninja-woman.png" alt="">
+            </div>
+        </div>
+        <div class="projects">
+            <div class="slidershow middle">
+                <div class="slides">
+                    <input type="radio" name="r" id="r1" checked>
+                    <input type="radio" name="r" id="r2">
+                    <input type="radio" name="r" id="r3">
+                    <input type="radio" name="r" id="r4">
+                    <input type="radio" name="r" id="r5">
+                        <div class="slide s1">
+                            <img src="https://i.ibb.co/pLy10RK/films-6.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="https://i.ibb.co/tc30YyM/films-3.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="https://i.ibb.co/RNbsY3q/films-5.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="https://i.ibb.co/Trx9gP1/films-1.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="https://i.ibb.co/NKgKKHm/mons-2.jpg" alt="">
+                        </div>
+                </div>
+                <div class="navigation">
+                    <label for="r1" class="bar"></label>
+                    <label for="r2" class="bar"></label>
+                    <label for="r3" class="bar"></label>
+                    <label for="r4" class="bar"></label>
+                    <label for="r5" class="bar"></label>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio *********************************************************************-->
+    <section id="Portfolio">
+        <div class="intro-heading" data-aos="fade">
+            <strong>My Work</strong>
+            <p>Follow Me</p>
+        </div>
+        <div class="social-media">
+            <ul>
+                <li data-aos="zoom-in"><a href="https://www.instagram.com/zd_ar.t/" target="_blanck"><i class="fab fa-instagram"></i></a></li>
+                <li data-aos="zoom-in"><a href="https://www.behance.net/ZDART" target="_blanck"><i style="background-color: #0054F7;" class="fab fa-behance"></i></a></i></li>
+                <li data-aos="zoom-in"><a href="https://www.artstation.com/zakariaelgallouch" target="_blanck"><i style="background:#13AFF0;" class="fab fa-artstation"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- services ****************************************************-->
+    <section id="services">
+        <strong class="services-heading" data-aos="fade-up">Services</strong>
+        <div class="services-box-container">
+            <!-- Service Box -->
+            <div class="services-box" data-aos="fade-right">
+                <!-- icon -->
+                <i class="fas fa-brush"></i>
+                <!-- heading -->
+                <strong>Digital Painting</strong>
+                <!-- details -->
+                <p>I Create beautiful artwork, without the messiness of painting with inks or oils. allow me to work
+                    faster and more creatively</p>
+            </div>
+            <!-- Service Box -->
+            <div class="services-box" data-aos="fade-down">
+                <!-- icon -->
+                <i class="fab fa-d-and-d"></i>
+                <!-- heading -->
+                <strong>3D Character</strong>
+                <!-- details -->
+                <p>You can expect the highest quality models, standard with good practices of modelling and videogame
+                    optimized</p>
+            </div>
+            <!-- Service Box -->
+            <div class="services-box" data-aos="fade-in">
+                <!-- icon -->
+                <i class="fab fa-unity"></i>
+                <!-- heading -->
+                <strong>3D Modeling</strong>
+                <!-- details -->
+                <p>Develop your product ideas with 3D models, renderings, drawings, and more</p>
+            </div>
+            <!-- Service Box -->
+            <div class="services-box" data-aos="fade-up">
+                <!-- icon -->
+                <i class="fab fa-steam-square"></i>
+                <!-- heading -->
+                <strong>Game Art</strong>
+                <!-- details -->
+                <p>Design your next big game with graphics and design assets for every game element</p>
+            </div>
+        </div>
+    </section>
+    <!-- contact *******************************************************-->
+    <section id="contact">
+        <strong class="services-heading" data-aos="fade-up">Contact</strong>
+        <form autocomplete="off" data-aos="fade-up" action="">
+            <!-- full-name -->
+            <input type="text" name="fullname" placeholder="Full Name" required>
+            <!-- email -->
+            <input type="email" name="email" placeholder="Example@gmail.com" required>
+            <!-- write something -->
+            <textarea name="message" placeholder="How I can help you?" required></textarea>
+            <!-- send button -->
+            <input type="submit" value="Send">
+        </form>
+    </section>
+    <!-- footer ********************************************************-->
+    <footer>
+        <span class="copyright">&copy; 2021</span>
+        <!-- footer social links -->
+        <div class="footer-social">
+            <!-- gmail -->
+            <a title="contact me in gmail" href="mailto:zakariaelgallouch@gmail.com" target="_blanck">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <!-- twitter -->
+            <a href="#">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <!-- Insta -->
+            <a href="#">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <!-- youtube -->
+            <a href="#">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </footer>
+    <script>
+        AOS.init();
+        // light-mode
+        var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+        document.body.classList.toggle("light-theme");
+        if (document.body.classList.contains("light-theme")){
+            icon.src = "https://i.ibb.co/vdbyN1D/moon.png";
+        }else {
+            icon.src = "https://i.ibb.co/1GjqN0k/sun.png"
+        }
+    }
+    $(window).on('load',function(){
+            $(".loading").fadeOut(1000);
+            $("body").fadeIn(1000);
+        });
+    </script>
+</body>
+</html>
