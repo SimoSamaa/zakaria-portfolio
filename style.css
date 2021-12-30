@@ -17,9 +17,11 @@
     --line:rgb(39, 39, 41);
     --prog:#1d1d1d;
     --white:#fff;
+    --shadow-1:rgba(0, 0, 0, 0.05);
+    --shadow-2:rgba(54, 54, 54, 0.8);
 }
 ::-webkit-scrollbar {
-    width:1.2em;
+    width:1em;
 }
 ::-webkit-scrollbar-track {
     background-color: var(--heading);
@@ -51,6 +53,8 @@
     --line:rgb(194, 182, 182);
     --prog:#DCDCDD;
     --white:black;
+    --shadow-1:none;
+    --shadow-2:none;
 }
 body {
     background-color: var(--body);
@@ -242,6 +246,7 @@ input[type="checkbox"]::before {
     clip-path: polygon(100% 0, 100% 74%, 50% 100%, 0 74%, 0 0);
     background-color:var(--home);
     z-index: -1;
+    background: url(https://i.ibb.co/FYGCysq/web-pattern.png) no-repeat center / cover;
 }
 /* model 3d */
 model-viewer {
@@ -280,6 +285,7 @@ model-viewer {
     text-decoration: none;
     overflow: hidden;
     color: #2196F3;
+    font-weight: bold;
 }
 .btns:hover {
     color: #255784;
@@ -359,9 +365,58 @@ model-viewer {
     display: flex;
     padding: 30px 50px 0 50px;
 }
+details summary::before {
+    content: "\f078";
+    position: absolute;
+    font-family: "font awesome 5 free";
+    font-weight: bold;
+    right: 20px;
+    bottom: 30%;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+details[open] summary::before {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+summary {
+    padding: 1em;
+    background-color: var(--heading);
+    margin-bottom:1.5em;
+    cursor: pointer;
+    font-weight: bold;
+    transition:background-color .3s;
+    -webkit-transition:background-color .3s;
+    -moz-transition:background-color .3s;
+    -ms-transition:background-color .3s;
+    -o-transition:background-color .3s;
+    position: relative;
+    list-style: none;
+}
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+    -webkit-animation: sweep .5s ease-in-out;
+    padding:20px 30px;
+}
+summary:hover {
+    color: var(--blue);
+}
+@keyframes sweep {
+    from {
+        opacity: 0; margin-top: -10px;
+    }
+    to {
+        opacity: 1;margin-top: 0;
+    }
+}
 .my-skills {
     width: 50%;
-    height: 100%;
 }
 .my-skills span {
     color: var(--blue);
@@ -371,31 +426,6 @@ model-viewer {
     color: var(--title);
     font-size: 50px;
     font-weight: 400
-}
-/* taps */
-.tap {
-    padding: 20px 0 0 20px;
-}
-.switch:target + .link + .content {
-    display: block;
-}
-.switch:target + .link {
-    border-bottom: 2px solid var(--blue);
-}
-.link:hover {
-    border-bottom: 2px solid var(--blue);
-}
-.link {
-    padding: 10px;
-    color: var(--title);
-    font-weight: 500;
-    display: inline-block;
-}
-.content {
-    float: left;
-    display: none;
-    width: 100%;
-    padding-top: 30px
 }
 /* skills-box */
 .skills-box {
@@ -424,7 +454,7 @@ model-viewer {
     width: 100%;
     height: 5px;
     background-color: var(--prog);
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 1px inset, rgba(54, 54, 54, 0.8) 0px 1px;
+    box-shadow: var(--shadow-1) 0px 1px 1px inset, var(--shadow-2) 0px 1px;
     border-radius: 10px;
     position: relative;
     margin-top: 30px;
@@ -517,12 +547,7 @@ model-viewer {
     border-style: solid;
     border-color:var(--blue) transparent transparent;
 }
-.avatar {
-    width: 50%;
-}
-.avatar img {
-    width: 100%;
-}
+/* projects */
 .projects {
     width: 50%;
     height: 86vh;
@@ -766,35 +791,6 @@ footer {
     background-color: #2993f7;
     transition: all ease 0.5s;
 }
-.taps-logo li {
-    width: 50px;
-    list-style: none;
-    animation: scale infinite linear alternate .5s;
-    -webkit-animation: scale infinite linear alternate .5s;
-}
-.taps-logo {
-    display: flex;
-    justify-content: space-between;
-}
-@keyframes scale {
-    from {
-        transform: scale(0.9);
-        -webkit-transform: scale(0.9);
-        -moz-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-        -o-transform: scale(0.9);
-}
-    to {
-        transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        -moz-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        -o-transform: scale(1.1);
-}
-}
-.taps-logo li img {
-    width: 100%;
-}
 @media (max-width:1381px) {
     .home-text {
         width: 90%;
@@ -806,9 +802,6 @@ footer {
     .my-skills,
     .projects {
         width: 100%;
-    }
-    .avatar {
-        display: none;
     }
 }
 @media (max-width:800px) {
@@ -896,15 +889,6 @@ footer {
     #home::before {
         clip-path:none;
     }
-    .tap {
-        padding: 20px 0 0;
-    }
-    .all {
-        display: block !important;
-    }
-    .link {
-        display: none;
-    }
     .projects {
         height: 52vh;
     }
@@ -913,5 +897,8 @@ footer {
     }
     .my-skills h2 {
         font-size: 40px;
+    }
+    br {
+        display: none;
     }
 }
