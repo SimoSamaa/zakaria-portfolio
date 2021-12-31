@@ -246,7 +246,7 @@ input[type="checkbox"]::before {
     clip-path: polygon(100% 0, 100% 74%, 50% 100%, 0 74%, 0 0);
     background-color:var(--home);
     z-index: -1;
-    background: url(https://i.ibb.co/FYGCysq/web-pattern.png) no-repeat center / cover;
+    background: url(https://i.ibb.co/FYGCysq/web-pattern.png);
 }
 /* model 3d */
 model-viewer {
