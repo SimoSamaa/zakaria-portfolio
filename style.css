@@ -918,8 +918,7 @@ footer {
     }
 }
 @media (max-height:753px) {
-    #home,
-    .projects {
+    #home {
         height:700px ;
     }
 }
