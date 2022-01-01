@@ -235,6 +235,7 @@ input[type="checkbox"]::before {
     height: 86vh;
     position: relative;
     z-index: 1;
+    padding-top: 40px;
 }
 #home::before {
     content: "";
@@ -914,5 +915,11 @@ footer {
         -o-border-radius: 50%;
         width: 20px;
         height: 20px;
+    }
+}
+@media (max-height:753px) {
+    #home,
+    .projects {
+        height:700px ;
     }
 }
