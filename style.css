@@ -72,7 +72,7 @@ body {
 .loading > div {
     height: 100px;
     width: 100px;
-    border: 15px solid #45474b;
+    border: 5px solid #45474b;
     border-top-color: var(--blue);
     position: absolute;
     margin: auto;
@@ -556,13 +556,8 @@ summary:hover {
     width: 80%;
     height: 80%;
     overflow: hidden;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
 }
-.middle{
+.middle {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -572,7 +567,7 @@ summary:hover {
     -ms-transform: translate(-50%,-50%);
     -o-transform: translate(-50%,-50%);
 }
-.navigation{
+.navigation {
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -583,7 +578,7 @@ summary:hover {
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
 }
-.bar{
+.bar {
     width: 50px;
     height: 10px;
     border: 2px solid #fff;
@@ -591,25 +586,30 @@ summary:hover {
     cursor: pointer;
     transition: 0.4s;
 }
-.bar:hover{
+.bar:hover {
     background: #fff;
 }
-input[name="r"]{
+input[name="r"] {
     position: absolute;
     visibility: hidden;
 }
-.slides{
+.slides {
     width: 500%;
     height: 100%;
     display: flex;
 }
-.slide{
+.slide {
     width: 20%;
     transition: 0.6s;
 }
-.slide img{
+.slide img {
     width: 100%;
     height: 100%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 #r1:checked ~ .s1 {
     margin-left: 0;
@@ -798,9 +798,15 @@ footer {
         flex-direction: column;
         width: 100%;
     }
-    .my-skills,
-    .projects {
+    .my-skills {
         width: 100%;
+    }
+    .projects {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .slidershow {
+        width: 623px;
     }
 }
 @media (max-width:800px) {
@@ -865,6 +871,9 @@ footer {
     #skills {
         padding:30px 20px 0 ;
     }
+    .projects {
+        width: 100%;
+    }
     .slidershow {
         width: 100%;
     }
@@ -878,7 +887,7 @@ footer {
         padding: 100px 20px 0 20px;
     }
     #Portfolio {
-        margin: 0;
+        margin-top: 0px;
     }
 }
 @media (max-width:500px) {
@@ -897,7 +906,13 @@ footer {
     .my-skills h2 {
         font-size: 40px;
     }
-    br {
-        display: none;
+    .bar {
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        width: 20px;
+        height: 20px;
     }
 }
