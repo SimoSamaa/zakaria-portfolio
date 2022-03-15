@@ -477,7 +477,7 @@ summary:hover {
     }
 }
 .line .zb {
-    width: 80%;
+    width: 70%;
     animation: animate-zb linear 1s 1;
     -webkit-animation: animate-zb linear 1s 1;
 }
@@ -486,7 +486,7 @@ summary:hover {
         width:0;
     }
     to {
-        width: 80%;
+        width: 70%;
     }
 }
 .line .sub {
@@ -503,7 +503,7 @@ summary:hover {
     }
 }
 .line .mar {
-    width: 60%;
+    width: 50%;
     animation: animate-mar linear 1s 1;
     -webkit-animation: animate-mar linear 1s 1;
 }
@@ -512,7 +512,7 @@ summary:hover {
         width:0;
     }
     to {
-        width: 60%;
+        width: 50%;
     }
 }
 .line span::before {
@@ -528,13 +528,13 @@ summary:hover {
     border-radius: 3px;
 }
 .line .zb::before {
-    content: "80%";
+    content: "70%";
 }
 .line .sub::before {
     content: "70%";
 }
 .line .mar::before {
-    content: "60%";
+    content: "50%";
 }
 .line span::after {
     position: absolute;
