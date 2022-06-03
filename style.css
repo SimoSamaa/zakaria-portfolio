@@ -6,6 +6,9 @@
     text-decoration: none;
     scroll-behavior: smooth;
 }
+html {
+    scroll-padding-top: 106px;
+}
 :root {
     --blue:#2196F3;
     --body:#17181A;
