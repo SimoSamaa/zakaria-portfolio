@@ -57,7 +57,7 @@ lineProgressphsho = document.querySelector(".skill-bar .phsho"),
     started = false;
 
 window.addEventListener("scroll", () => {
-    if (window.scrollY >= secSkills.offsetTop - 250) {
+    if (window.scrollY >= secSkills.offsetTop - 300) {
         if (!started) {
             counter.forEach(all => counterSkills(all));
         }
